@@ -501,3 +501,21 @@ submit50 cs50/problems/2020/x/tracks/web/finance
 git init
 git remote add origin https://github.com/ashu-r/cs50_finance.git
 git add -A
+git add -A
+git commit -m "cs50"
+git config --global user.email "randiveashutosh@gmail.com"
+git config --global user.name "ashu-r"
+git commit -m "cs50"
+git push -u origin master
+git remote add origin https://github.com/ashu-r/finance_cs50.git
+git remote remove origin
+git remote add origin https://github.com/ashu-r/finance_cs50.git
+git push -u origin master
+git pull
+git pull remote origin
+git pull master  origin
+git pull git@github.com:Ashu-r/finance_cs50.git
+git pull https://github.com/Ashu-r/finance_cs50.git
+git push -u origin master
+pgloader finance.db     postgres://pdlqfnpkehjffb:c7b388P5oiHrcjRJDKz4976oFDu87erJ9riDdd9905d0bf820c32a714a2541765@ec2-34-202-88-122.compute-1.amazonaws.com:5432/d493met7lh4tq0?sslmode=require
+pgloader finance.db postgres://pdlqfnpkehjffb:c7b388NH9ZsXBsvDgfeJuCJ5GPxzsjc6sEBqdd9905d0bf820c32a714a2541765@ec2-34-202-88-122.compute-1.amazonaws.com:5432/d493met7lh4tq0?sslmode=require
