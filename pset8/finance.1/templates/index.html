@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy
+{% endblock %}
+
+{% block main %}
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>TOTAL</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="4"></td>
+                <td><strong>{{usd(balance + price)}}</strong></td>
+            </tr>
+        </tfoot>
+        <tbody>
+            {% for item in dataa %}
+                <tr>
+                    <td>{{ item.hsymbol }}</td>
+                    <td>{{ item.hcname }}</td>
+                    <td>{{ item.total_shares }}</td>
+                    <td>{{ usd(stock[item.hsymbol]["price"]) }}</td>
+                    <td>{{ usd(stock[item.hsymbol]["price"] * item.total_shares) }}</td>
+                </tr>
+            {% endfor %}
+
+
+            <tr>
+                <td colspan="4">CASH REMAINING</td>
+                <td>{{ usd(balance) }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+{% endblock %}

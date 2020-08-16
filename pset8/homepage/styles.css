@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+.nav-item :hover {
+	background-color: bisque;
+	color: blue;
+	border-radius: 8px;
+}
+
+.jumbotron {
+	font-family: 'Quicksand', sans-serif;
+	font-size: larger;
+}
+
+.card-header {
+	font-family: 'Quicksand';
+	font-weight: 400;
+}
+
+.card-text {
+	font-family: 'Quicksand';
+}
+
+#mobile {
+	font-family: 'Quicksand';
+}
